@@ -36,7 +36,6 @@ const Container = styled.div`
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: .5em;
 `
 
@@ -47,6 +46,7 @@ const Time = styled.h1`
     text-align: center;
     margin: .5em;
     color: #61DAFB;
+    text-shadow: 0 0 .125em #61DAFB;
 `
 
 const ButtonGroup = styled.div`
@@ -73,6 +73,7 @@ const Button = styled.button`
     &:hover:not(:disabled) {
         color: var(--back);
         background-color: var(--color);
+        box-shadow: 0 0 .5em var(--color);
     }
 
     &:disabled {
